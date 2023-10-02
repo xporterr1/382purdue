@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muffin Company Story</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Welcome to Margaret's Marvelous Muffins</h1>
+        </header>
+
+        <section>
+            <h2><font color="blue">Our Story & Mission</font></h2>
+            <p><font size="5">Margaret's Marvelous Muffins was founded in 1967 by Margaret Townsend a local Indiana baker and farmer. With the help of her son Tom and daughter Katie, she would sell a few dozen muffins a week from the back of her one oven kitchen. Since then the tiny family owned business has grown into a franchise with dozens of locations across the US, provide a variety of desserts, with her famous muffins serving as the main attraction.</font></p>
+
+            <h3>Our Mission</h3>
+            <ol>
+                <li>We Want To Make Your Life Tastier </li>
+                <li>Keep baking desserts with our <u>Orignal Recipes</u></li>
+                <li><b>Customers are our Family</b> and we work with our local community</li>
+            </ol>
+
+            <h3>Fun Facts about our Business:</h3>
+            <ul>
+                <li></li>
+                <li>Family Owned Since the 60s</li>
+                <li>Catered over 1000 weddings</li>
+                <li>Started doing gender reveals in 2012</li>
+                <li>Served our famous bananna muffin to <i>Sir Paul McCartney</i></li>
+            </ul>
+
+            <h3>Visit Our Original Bakery:</h3>
+            <p>Order one of our classic desserts or create a custom muffin by scheduling a visit to our homely first franchise.</p>
+
+            <a href="https://www.scheduly.com/">Schedule A Visit</a>
+        </section>
+
+        <section>
+            <h2> Visit Our Original Home</h2>
+            <img src="382muffin.jpeg" alt="Original Shop">
+            <br><br>
+            <p>Click the link below to download info on our ESG efforts:</p>
+
+            <a href="https://s28.q4cdn.com/141746709/files/doc_downloads/2023/TOAST_FY22_ESG_Report_051523.pdf" download="document.pdf">ESG Report</a>
+        </section>
+
+        <footer>
+            <p>For Any Inquiries Please Contact <a href="mailto:xporter@purdue.edu">xporter@purdue.edu</a></p>
+        </footer>
+
+        <p>Last Updated: <span id="last-updated"></span></p>
+    </div>
+
+    <script>
+        // Get the current date and time
+        const currentDate = new Date();
+
+        // Get the date and time in a readable format
+        const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', timeZoneName: 'short' };
+        const formattedDate = currentDate.toLocaleDateString('en-US', options);
+
+        // Display the formatted date and time in the "last-updated" element
+        document.getElementById('last-updated').textContent = formattedDate;
+    </script> 
+
+</body>
+
+</html>
